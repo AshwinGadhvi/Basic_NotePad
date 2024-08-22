@@ -12,7 +12,8 @@
         <form action="/edit" method="post">
             <input class="block w-1/4 rounded-md outline-none px-5 py-2 bg-zinc-500" type="text" name="prevName" id="" placeholder="Previos Name" value="<%= filename %>">
             <input class="block w-1/4 rounded-md outline-none px-5 py-2 bg-zinc-500 mt-2" type="text" name="newName" id="" placeholder="New Name">
-            <input class="mt-2 bg-yellow-600 px-5 py-2 rounded-md" type="submit" value="Update Name">
+            <textarea class="block w-full rounded-md outline-none px-5 py-2 bg-zinc-500 resize-none mt-2" name="details" id="" placeholder="Your Task Details Here"><%= data %></textarea>
+            <input class="mt-2 bg-yellow-600 px-5 py-2 rounded-md" type="submit" value="Update">
         </form>
     </div>
 </body>
